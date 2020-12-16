@@ -1,0 +1,1 @@
+web: gunicorn Oslash.wsgi --log-file -
