@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY','x$n-onhr%m9++e9hyzf%6d(s5bq_-r2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG','') != 'False'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://oslash-backend-project.herokuapp.com/', '127.0.0.1']
 
 
 # Application definition
