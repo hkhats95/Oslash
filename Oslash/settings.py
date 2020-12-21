@@ -23,7 +23,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY','x$n-onhr%m9++e9hyzf%6d(s5bq_-r2t7p=ylswzht3wxc6plu')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DJANGO_DEBUG','') != 'False'
+#DEBUG = os.environ.get('DJANGO_DEBUG','') != 'False'
+DEBUG = False
 
 ALLOWED_HOSTS = ['oslash-backend-project.herokuapp.com', '127.0.0.1']
 
