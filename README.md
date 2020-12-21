@@ -145,7 +145,7 @@ SUPER_ADMIN_USER = {
 		},
 	},
 	"update_user_request": {
-		"url": "www.oslash-backend-project.herokuapp.com/request/user",
+		"url": "www.oslash-backend-project.herokuapp.com/request/users",
 		"method": "GET",
 	},
 	"CUD_tweet_requests": {
@@ -153,7 +153,7 @@ SUPER_ADMIN_USER = {
 		"method": "GET",
 	},
 	"response_to_update_user_requests": {
-		"url": "www.oslash-backend-project.herokuapp.com/respond/user",
+		"url": "www.oslash-backend-project.herokuapp.com/respond/users",
 		"method": "PUT",
 		"body": [
 			{

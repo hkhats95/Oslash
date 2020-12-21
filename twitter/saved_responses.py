@@ -148,7 +148,7 @@ SUPER_ADMIN_USER = {
 		},
 	},
 	"update_user_request": {
-		"url": "{}/request/user".format(domain),
+		"url": "{}/request/users".format(domain),
 		"method": "GET",
 	},
 	"CUD_tweet_requests": {
@@ -156,7 +156,7 @@ SUPER_ADMIN_USER = {
 		"method": "GET",
 	},
 	"response_to_update_user_requests": {
-		"url": "{}/respond/user".format(domain),
+		"url": "{}/respond/users".format(domain),
 		"method": "PUT",
 		"body": [
 			{
