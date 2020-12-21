@@ -610,6 +610,7 @@ def update_user_request(request):
 				upuser.new_last_name = new_last_name
 			if new_bio:
 				upuser.new_bio = new_bio
+			upuser.save()
 			#log
 			logger.info("Admin:{} requested an update of User:{}'s profile".format(u.username, user.username), extra={'source': u.username, 'log_type': 'action', 'object': 'user:{}'.format(user.username)})
 			return JsonResponse(REQUEST_SUCCESS, safe=False)
