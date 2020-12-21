@@ -28,6 +28,40 @@ DEBUG = os.environ.get('DJANGO_DEBUG','') != 'False'
 ALLOWED_HOSTS = ['oslash-backend-project.herokuapp.com', '127.0.0.1']
 
 
+#Logging Config
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'json': {
+            'format': '%(asctime)s %(name)s %(message)s',
+            'class': 'pythonjsonlogger.jsonlogger.JsonFormatter'
+        },
+    },
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'twitter/twitter_logs.log'),
+            'formatter': 'json',
+        },
+    },
+    'loggers': {
+        'twitter_logs': {
+            'handlers': ['file',],
+            'level': 'INFO',
+        },
+    },
+}
+
+# # Honor the 'X-Forwarded-Proto' header for request.is_secure()
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'http')
+
+# SECURE_SSL_REDIRECT = False
+
+#USER MODEL
+AUTH_USER_MODEL = "twitter.User"
+
 # Application definition
 
 INSTALLED_APPS = [

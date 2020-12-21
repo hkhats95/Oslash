@@ -1,0 +1,30 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+	path('', views.index, name='index'),
+	path('login', views.login_view, name='login'),
+	path('logout', views.logout_view, name='logout'),
+	path('register', views.register, name='register'),
+	path('user/profile', views.profile, name='profile'),
+	path('user/tweets', views.stweets, name='stweets'),
+	path('user/<int:user_id>/profile', views.userprofile, name='userprofile'),
+	path('user/<int:user_id>/tweets', views.usertweets, name='usertweets'),
+	path('all/user/profile', views.alluserprofile, name='alluserprofile'),
+	path('newtweet', views.new_tweet, name='new_tweet'),
+	path('edittweet', views.edit_tweet, name='edit_tweet'),
+	path('deletetweet', views.delete_tweet, name='delete_tweet'),
+	path('tweet/update/request', views.update_tweet_request, name='update_tweet_request'),
+	path('tweet/delete/request', views.delete_tweet_request, name='delete_tweet_request'),
+	path('tweet/create/request', views.create_tweet_request, name='create_tweet_request'),
+	path('user/update/request', views.update_user_request, name='update_user_request'),
+	path('request/user', views.request_user, name='request_user'),
+	path('request/tweets', views.request_tweets, name='request_tweets'),
+	path('respond/users', views.respond_users, name='respond_users'),
+	path('respond/tweets/update', views.respond_tweets_update, name='respond_tweets_update'),
+	path('respond/tweets/delete', views.respond_tweets_delete, name='respond_tweets_delete'),
+	path('respond/tweets/create', views.respond_tweets_create, name='respond_tweets_create'),
+	path('logs', views.logs, name='logs'),
+	path('logs/query', views.logs_query, name='logs_query'),
+	path('register/admin', views.register_admin, name='register_admin'),
+]
