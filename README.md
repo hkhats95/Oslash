@@ -1,5 +1,7 @@
 # Oslash
 
+## Super Admin and Admin are not allowed to post tweets.
+
 This backend project provides you with the following API's to work with the database:
 
 ```python
