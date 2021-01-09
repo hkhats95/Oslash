@@ -1,6 +1,6 @@
 # Twitter API project
 
-#####This application allows data from three user roles:
+##### This application allows data from three user roles:
 1. Twitter Users: Generic user account
   * Users signup and generate content independently on the platform in the form of tweets.
 2. Admin: Internal employee account of twitter
@@ -10,14 +10,16 @@
   * Super-admin can perform analytics queries and generate insights from user behavior.
   
 
-#####APIs for the user, admin and super-admin perform following functions.
+##### APIs for the user, admin and super-admin perform following functions.
 **For Users:**
 1. Create a tweet
 2. List of tweets (Simple chronological timeline of own tweets, does not contain replies)
 3. Delete own tweet
+
 **For Admin:**
 1. Edit user details
 2. Initiate CRUD of tweets on users' behalf
+
 **For Super-Admin:**
 1. Approve actions initiated by admin
 2. View logs (e.g access/action/audit log)
@@ -25,7 +27,4 @@
   Examples:
     * Post frequency of user X within a timeframe
     * Number of changes requested by Admin P
-
-
-
 
